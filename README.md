@@ -12,3 +12,4 @@ The Collatz conjecture is an open conjecture in mathematics named so after Lotha
 * The powers of two converge to one quickly because 2n is halved n times to reach one, and is never increased.
 * We can observe that no two integers are repeated in cycle
 * We can see in the histogram that the number of steps exceed more 100 than hundred only once for the given input range.
+* There are only a few outliers in scatter plot
