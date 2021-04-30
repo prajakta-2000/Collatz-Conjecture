@@ -36,11 +36,23 @@ def bargraph(steps,n_list):
     plt.savefig("collatz_bargraph.png",bbox_inches="tight",dpi=600)
     plt.show()
 
+def scatterplot(steps,n_list):
+    plt.figure(figsize=(15, 10))
+    plt.xlabel("NUMBERS")
+    plt.ylabel("STEPS")
+    plt.title("Collatz Conjecture")
+    plt.scatter(n_list, steps, color='red', marker='.')
+    plt.savefig("collatz_scatter.png",bbox_inches="tight",dpi=600)
+    plt.show()
+
+
+
 if __name__=="__main__":
-    MAX = 30
+    MAX = 10000
     n_list = range(1,MAX+1)
     steps=collatz(n_list)
     print("Maximum steps : {} by number {}".format(max(steps),steps.index(max(steps))+1))
     print("Minimum steps : {} by number {}".format(min(steps),steps.index(min(steps))+1))
-    histogram(steps)
-    bargraph(steps,list(map(str,n_list)))
+    # histogram(steps)
+    # bargraph(steps,list(map(str,n_list)))
+    scatterplot(steps,n_list)
