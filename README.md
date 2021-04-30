@@ -2,8 +2,8 @@
 
 The Collatz conjecture is an open conjecture in mathematics named so after Lothar Collatz who proposed it in 1937. It is also known as 3n + 1 conjecture, the Ulam conjecture (after Stanislaw Ulam), Kakutani’s problem (after Shizuo Kakutani) and so on.
 
-## Graph
-![graph](collatz_scatter.png)
+## Scatter plot
+![scatter](collatz_scatter.png)
 
 ## Histogram
 ![histogram](collatz_histogram.png)
